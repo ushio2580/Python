@@ -1,0 +1,12 @@
+def dayup(df):
+    dayup=1;
+    for i in range(365):
+        if i % 7 in [0,6]:
+            dayup=dayup*(1-0.01);
+        else:
+            dayup=dayup*(1+df);
+    return dayup
+df=0.01
+while dayup(df)<37.78:
+    df=df+0.0001
+print("工作努力参数为{:.4f}".format(df))
