@@ -1,0 +1,13 @@
+
+N=eval(input(""))
+a=pow(1.0+0.001*N,365)
+b=pow(1.0-0.001*N,365)
+c=int(a//b)
+print("{:.2f},{:.2f},{}".format(a,b,c))
+
+'''
+NN=eval(input())
+Working=pow((1.0+0.001*NN),364)
+Pig=pow((1.0-0.001*NN),364)
+BB=int(Working//Pig)
+print("{:.2f}, {:.2f}, {}".format(Working,Pig,BB))
