@@ -1,0 +1,17 @@
+#PythonDraw.py
+import turtle
+turtle.setup(650,350,200,200)#窗口大小及位置：前两位表示窗体本身的宽度及高度，后两位表示窗口左上角坐标在屏幕窗口的坐标
+turtle.penup()
+turtle.fd(-250)
+turtle.pendown()
+turtle.pensize(25)
+turtle.pencolor("purple")
+turtle.seth(-40)
+for i in range(4):
+    turtle.circle(40,80)
+    turtle.circle(-40,80)
+turtle.circle(40,80/2)
+turtle.fd(40)
+turtle.circle(16,180)
+turtle.fd(40*2/3)
+turtle.done() #程序执行完成后需要手动退出
