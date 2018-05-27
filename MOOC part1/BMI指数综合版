@@ -1,0 +1,17 @@
+height,weight=eval(input("请输入身高(M)和体重(KG)[逗号隔开]:"))
+bmi=weight/pow(height,2)
+print("bmi数值为{:.2f}".format(bmi))
+wor,cha='',''
+if bmi<18.5:
+    wor,cha="偏瘦","偏瘦"
+elif 18.5<=bmi<24:
+    wor,cha="正常","正常"
+elif 24<=bmi<25:
+    wor,cha="正常","偏胖"
+elif 25<=bmi<28:
+    wor,cha="偏胖","偏胖"
+elif 28<=bmi<30:
+    wor,cha="偏胖","肥胖"
+else:
+    wor,cha="肥胖","肥胖"
+print("国际BMI值为{0},国内BMI值为{1}".format(wor,cha))
