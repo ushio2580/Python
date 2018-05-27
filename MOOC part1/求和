@@ -1,0 +1,8 @@
+'''编写一个程序，计算输入数字N的0次方到5次方结果，并依次输出这6个结果，输出结果间用空格分隔。其中：N是一个整数或浮点数'''
+value=eval(input()) #评估函数，将输入转换成有效的数值
+list=[]
+for i in range(6):
+    number=value**i
+    list.append(str(number)) #str函数将数值转换为字符串，append函数将其添加到数组中
+#print(tuple(list))#以元组输出
+print(" ".join(tuple(list))) #tuple函数将列表转换为元祖后（此处可不用）join函数将元组或列表中的字符连接成新的字符串
