@@ -1,0 +1,7 @@
+N=eval(input())
+for i in range(N):
+    number=2*i+1
+    print((number*'*').center(N," "))
+    if(1+2*i)==N:
+
+        break
