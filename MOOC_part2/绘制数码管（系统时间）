@@ -42,7 +42,7 @@ def main():
     turtle.fd(-350)
     turtle.pensize(5)
 #    drawDate('2018-10=10+')
-    drawDate(time.strftime('%Y-%m=%d+',time.gmtime()))
+    drawDate(time.strftime('%Y-%m=%d+',time.gmtime())) #gmtime()获取系统时间
     turtle.hideturtle() #隐藏箭头显示
     turtle.done()
 main()
