@@ -1,0 +1,28 @@
+def getnum(): #获取用户输入并存入数组
+    num=[]
+    a=input("请输入数值(回车退出): ")
+    while a!="":
+        num.append(eval(a))
+        a=input("请输入数值(回车退出): ")
+    return num
+def mean(nums):#计算平均值
+    s=0.0
+    for i in nums:
+                s+=i
+    return s/len(nums)
+def dev(nums,mean):#计算方差
+    sm=0.0
+    for i in nums:
+        sm=sm+(i-mean)**2
+    return pow(sm/(len(nums)),0.5)
+def median(nums):#计算中位值
+    sorted(nums)#排序函数
+    n=len(nums)
+    if n%2==0:
+        media=(nums[n//2-1]+nums[n//2])/2
+    else:
+        media=nums[n//2]
+    return media
+n=getnum()
+m=mean(n)
+print("平均值:{},方差:{:.2},中位数:{}".format(m,dev(n,m),median(n)))
